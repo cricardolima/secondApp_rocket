@@ -1,0 +1,12 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "username": "docker",
+  "password": "ignite",
+  "database": "segundo_app",
+  "migrations": ["./src/database/migrations/*{.ts,.js}"],
+  "entities": ["./src/modules/**/entities/*{.ts,.js}"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
